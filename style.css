@@ -1,0 +1,98 @@
+html {
+  height:100%;
+  scroll-behavior: smooth;
+}
+body {
+  height: 2000px;
+}
+video {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  min-width: 60%;
+  min-height: 60%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  background-size: cover;
+  transform: translate(-50%,-50%);
+}
+
+body {
+  z-index: 2;
+  background-color: #222222;
+  /* background: repeating-linear-gradient(45deg, #2b2b2b 0%, #2b2b2b 10%, #222222 0%, #222222 50%) 0 / 15px 15px; */
+}
+#container {
+  width: 500px;
+  /* margin: auto; */
+  margin: -45px auto;
+
+
+}
+
+
+p {
+  text-align: center;
+  font-size: 5em;
+  color: #ffffff;
+
+}
+p:hover {
+  color: #ffffff;
+  }
+/* p animation */
+p{
+color: #fff;
+-webkit-animation: neonColor 1.5s ease-in-out infinite alternate;
+-moz-animation: neonColor 1.5s ease-in-out infinite alternate;
+animation: neonColor 1.5s ease-in-out infinite alternate;
+}
+
+p:hover {
+-webkit-animation: neonColor 1.5s ease-in-out infinite alternate;
+-moz-animation: neonColor 1.5s ease-in-out infinite alternate;
+animation: neonColor 1.5s ease-in-out infinite alternate;
+}
+
+
+/*Neon*/
+
+@keyframes neonColor {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #1b85ff, 0 0 70px #1b85ff, 0 0 80px #1b85ff, 0 0 100px #1b85ff, 0 0 120px #1b85ff;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #1b85ff, 0 0 35px #1b85ff, 0 0 40px #1b85ff, 0 0 50px #1b85ff, 0 0 75px #1b85ff;
+  }
+}
+  /*glow for webkit*/
+ @-webkit-keyframes neonColor {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #1b85ff, 0 0 70px #1b85ff, 0 0 80px #1b85ff, 0 0 100px #1b85ff, 0 0 120px #1b85ff;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #1b85ff, 0 0 35px #1b85ff, 0 0 40px #1b85ff, 0 0 50px #1b85ff, 0 0 75px #1b85ff;
+  }
+}
+
+ /*glow for mozilla*/
+
+ @-moz-keyframes neonColor {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #1b85ff, 0 0 70px #1b85ff, 0 0 80px #1b85ff, 0 0 100px #1b85ff, 0 0 120px #1b85ff;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #1b85ff, 0 0 35px #1b85ff, 0 0 40px #1b85ff, 0 0 50px #1b85ff, 0 0 75px #1b85ff;
+  }
+}
+
+/* responsiveness */
+@media (max-width: 650px) {
+#container {
+  width: 100%;
+}
+p {
+  font-size: 3.5em;
+}
+}
